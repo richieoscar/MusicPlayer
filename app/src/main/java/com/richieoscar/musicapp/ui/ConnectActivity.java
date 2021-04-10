@@ -1,8 +1,10 @@
-package com.richieoscar.musicapp;
+package com.richieoscar.musicapp.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.richieoscar.musicapp.R;
 
 public class ConnectActivity extends AppCompatActivity {
 

@@ -9,19 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MusicApp">
-        <activity android:name=".ConnectActivity"
-            android:label="Connect To"
-            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".ui.PlayListActivity"
+            android:label="@string/playlists"
+            android:parentActivityName=".ui.MainActivity"></activity>
         <activity
-            android:name=".BuyMusicActivity"
-            android:label="Buy Music"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".DetailActivity" />
+            android:name=".ui.ConnectActivity"
+            android:label="@string/connect"
+            android:parentActivityName=".ui.MainActivity" />
         <activity
-            android:name=".AllSongsActivity"
-            android:label="All Songs"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivity">
+            android:name=".ui.BuyMusicActivity"
+            android:label="@string/buy_music"
+            android:parentActivityName=".ui.MainActivity" />
+        <activity
+            android:name=".ui.DetailActivity"
+            android:label="@string/now_playing" />
+        <activity
+            android:name=".ui.AllSongsActivity"
+            android:label="@string/all_songs"
+            android:parentActivityName=".ui.MainActivity" />
+        <activity
+            android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

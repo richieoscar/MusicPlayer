@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">MusicApp</string>
+    <string name="playlists">PlayLists</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="all_songs">All Songs</string>
+    <string name="albums">Albums</string>
+    <string name="buy_music">Buy Music</string>
+    <string name="connect">Connect</string>
+    <string name="connect_player_to">Connect Player To</string>
+    <string name="spotify">Spotify</string>
+    <string name="boomplay">BoomPlay</string>
+    <string name="deezer">Deezer</string>
+    <string name="play_music">Play Music</string>
+    <string name="reckless">Reckless</string>
+    <string name="wizkid">Wizkid</string>
+    <string name="start">0.00</string>
+    <string name="end">2.25</string>
+    <string name="buy">Buy</string>
+    <string name="amount">$20</string>
+    <string name="store">Store</string>
+    <string name="connect_to">Connect To</string>
+    <string name="my_playlists">My PlayLists</string>
+    <string name="songs">\ songs\</string>
+    <string name="music_library">Music Library</string>
 </resources>

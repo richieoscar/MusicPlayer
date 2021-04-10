@@ -1,4 +1,4 @@
-package com.richieoscar.musicapp;
+package com.richieoscar.musicapp.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,13 +10,15 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.richieoscar.musicapp.R;
+import com.richieoscar.musicapp.model.PlayList;
 import com.richieoscar.musicapp.model.Song;
 
 import java.util.List;
 
-public class MusicAdapter extends ArrayAdapter<Song>
+public class PlayListAdapter extends ArrayAdapter<PlayList>
 {
-    public MusicAdapter(@NonNull Context context, @NonNull List<Song> objects) {
+    public PlayListAdapter(@NonNull Context context, @NonNull List<PlayList> objects) {
         super(context, 0, objects);
     }
 
@@ -24,12 +26,10 @@ public class MusicAdapter extends ArrayAdapter<Song>
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater layoutInflater = LayoutInflater.from(getContext());
-        View view = layoutInflater.inflate(R.layout.music_list, parent, false);
-        Song song = getItem(position);
-        TextView songTitle = view.findViewById(R.id.song_title);
-        TextView artistName = view.findViewById(R.id.artist_name);
-        songTitle.setText(song.getTitle());
-        artistName.setText(song.getArtist());
+        View view = layoutInflater.inflate(R.layout.play_list, parent, false);
+        PlayList playList = getItem(position);
+        TextView songTitle = view.findViewById(R.id.playList_title);
+        songTitle.setText(playList.getTitle());
         return view;
 
     }

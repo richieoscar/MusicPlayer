@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#E64A19"
-    tools:context=".ConnectActivity">
+    android:background="#EB000000"
+    tools:context=".ui.ConnectActivity">
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:text="Connect Player To"
-        android:textColor="@color/black"
+        android:text="@string/connect_player_to"
+        android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,7 +29,7 @@
         android:layout_marginTop="84dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#1FA125"
-        android:text="Spotify"
+        android:text="@string/spotify"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,7 +42,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/black"
-        android:text="BoomPlay"
+        android:text="@string/boomplay"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
@@ -54,7 +54,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#303F9F"
-        android:text="Deezer"
+        android:text="@string/deezer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
@@ -66,7 +66,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#E64A19"
-        android:text="Play Music"
+        android:text="@string/play_music"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button5" />

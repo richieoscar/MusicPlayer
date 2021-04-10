@@ -1,9 +1,13 @@
-package com.richieoscar.musicapp;
+package com.richieoscar.musicapp.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.richieoscar.musicapp.R;
 
 public class DetailActivity extends AppCompatActivity {
 
@@ -11,13 +15,12 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
-
-       String title = getIntent().getStringExtra("Title");
-       String artist = getIntent().getStringExtra("Artist");
         TextView songTitle = findViewById(R.id.textView_det_title);
         TextView artistName = findViewById(R.id.textView_det_artist);
-        //songTitle.setText(title);
-        //artistName.setText(artist);
+        ImageView playList = findViewById(R.id.imageView_det_to_playlist);
+        playList.setOnClickListener(v->{
+            startActivity(new Intent(this, PlayListActivity.class));
+        });
 
     }
 }

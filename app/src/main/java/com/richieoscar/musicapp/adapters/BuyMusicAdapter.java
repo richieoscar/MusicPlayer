@@ -1,4 +1,4 @@
-package com.richieoscar.musicapp;
+package com.richieoscar.musicapp.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.richieoscar.musicapp.R;
 import com.richieoscar.musicapp.model.Song;
 
 import java.util.List;

@@ -125,7 +125,7 @@ public class MusicLibrary {
 
         playList.add(new PlayList("Travel", travelPlayList));
         playList.add(new PlayList("Reading", readingPlayList));
-        playList.add(new PlayList("Reading", workOutPlayList));
+        playList.add(new PlayList("Work Out", workOutPlayList));
         return playList;
     }
 
